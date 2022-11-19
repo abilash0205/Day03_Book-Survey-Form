@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Survey Form</title>
+</head>
+
+<body>
+    <div>
+        <h1>Book Survey</h1>
+        <img src="survey form.jpg" alt="" width="200px">
+    </div>
+    <form action="" method="post">
+        <!-- Personal Details -->
+        <div>
+            <label for="name">Name </label>
+            <br>
+            <input type="text" placeholder="First Name" required> <input type="text" placeholder="Last Name">
+            <br>
+            <label for="dob">Birth Date </label>
+            <input type="date">
+            <br>
+            <label for="email">Email </label>
+            <input type="email" placeholder="example@example.com" required>
+            <br>
+            <label for="number">Phone Number</label>
+            <input type="number" placeholder="Enter valid number">
+        </div>
+
+        <div>
+            <br><br>
+            <!-- Survey Questions -->
+            <ol>
+                <li>What is your Favorite book?</li>
+                <input type="text">
+
+                <br>
+
+                <li>What is the most recent book you've read?</li>
+                <input type="text" placeholder="Book Name">
+                <input type="text" placeholder="Author">
+                <label for="genre">Type</label>
+                <select name="genre" id="">
+                    <option value="">Action</option>
+                    <option value="">Science-Fiction</option>
+                    <option value="">Classics</option>
+                    <option value="">Comics</option>
+                    <option value="">Mystery</option>
+                    <option value="">Fantasy</option>
+                    <option value="">Historical</option>
+                    <option value="">Educational</option>
+                    <option value="">Other</option>
+                </select>
+
+                <br>
+
+                <li>In a year how many books do you read?</li>
+                <input type="radio" id="count" name="book_count"><label for="count">Less than 5</label>
+                <br>
+                <input type="radio" id="count" name="book_count"><label for="count">Between 5 - 20</label>
+                <br>
+                <input type="radio" id="count" name="book_count"><label for="count">Between 20 - 30</label>
+                <br> 
+                <input type="radio" id="count" name="book_count"><label for="count">More than 30</label>
+
+                <br>
+
+                <li>Where do you usually get your books?</li>
+                <input type="checkbox" name="getting_books" id="buying"><label for="buying">Online Book Store</label>
+                <br>
+                <input type="checkbox" name="getting_books" id="buying"><label for="buying">Book Stores</label>
+                <br>
+                <input type="checkbox" name="getting_books" id="buying"><label for="buying">Book Fairs</label>
+                <br>
+                <input type="checkbox" name="getting_books" id="buying"><label for="buying">Library</label>
+                <br>
+                <input type="checkbox" name="getting_books" id="buying"><label for="buying">Other</label>
+
+                <br>
+
+                <li>What kind of books do you like to read?</li>
+                <input type="checkbox" name="genres" id="interests"><label for="interests">Action/Thrillers</label><br>
+                <input type="checkbox" name="genres" id="interests"><label for="interests">Mystery</label><br>
+                <input type="checkbox" name="genres" id="interests"><label for="interests">Romance</label><br>
+                <input type="checkbox" name="genres" id="interests"><label for="interests">Science-Fiction</label><br>
+                <input type="checkbox" name="genres" id="interests"><label for="interests">Educational</label><br>
+                <input type="checkbox" name="genres" id="interests"><label for="interests">Religious</label><br>
+                <input type="checkbox" name="genres" id="interests"><label for="interests">Romance</label><br>
+                <input type="checkbox" name="genres" id="interests"><label for="interests">Biography</label><br>
+                <input type="checkbox" name="genres" id="interests"><label for="interests">Drama</label><br>
+                <input type="checkbox" name="genres" id="interests"><label for="interests">Other</label>
+
+                <br>
+
+                <li>When did you begin reading a book?</li>
+                <input type="radio" name="habit-age" id="years_old"><label for="years_old">Less than 15 years old</label><br>
+                <input type="radio" name="habit-age" id="years_old"><label for="years_old">15 - 30 years old</label><br>
+                <input type="radio" name="habit-age" id="years_old"><label for="years_old">30 years old or more</label>
+
+                <br>
+
+                <li>What is your preferred reading medium?</li>
+                <input type="checkbox" name="preferred_medium" id="medium"><label for="medium">Printed Books</label><br>
+                <input type="checkbox" name="preferred_medium" id="medium"><label for="medium">Magazines</label><br>
+                <input type="checkbox" name="preferred_medium" id="medium"><label for="medium">Website</label><br>
+                <input type="checkbox" name="preferred_medium" id="medium"><label for="medium">E-Books</label><br>
+                <input type="checkbox" name="preferred_medium" id="medium"><label for="medium">Other</label>
+
+                <br>
+
+                <li>How likely are you to recommend reading more books to your family and friends based on your overall experience?</li>
+                <input type="radio" name="books_recommend" id="recommend"><label for="recommend">1 (Never)</label><br>
+                <input type="radio" name="books_recommend" id="recommend"><label for="recommend">2</label><br>
+                <input type="radio" name="books_recommend" id="recommend"><label for="recommend">3</label><br>
+                <input type="radio" name="books_recommend" id="recommend"><label for="recommend">4</label><br>
+                <input type="radio" name="books_recommend" id="recommend"><label for="recommend">5 (Always)</label>
+
+                <br>
+
+                <li>Additional Comments</li>
+                <textarea name="" id="Comments" placeholder="Type here..."></textarea>
+            </ol>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
